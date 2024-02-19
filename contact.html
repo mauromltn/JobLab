@@ -7,7 +7,7 @@
 <body>
     <header>
         <h1>LuxStay Resorts</h1>
-        <nav style="text-align: center; margin: 15px 10px 10px 10px;">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resorts.html">Resorts</a></li>
@@ -20,9 +20,11 @@
     <h1>Contatti</h1>
     
     <h2>Informazioni di contatto</h2>
-    <p>Indirizzo: Via Example, 12345 Città, Stato</p>
-    <p>Telefono: 123-456-7890</p>
-    <p>Email: info@example.com</p>
+    <p>
+        Indirizzo: Via del Sole, 456, 20100 Milano, Italia<br>
+        Telefono: +39 02 1234 5678<br>
+        Email: info@luxstayresorts.com
+    </p>
     
     <h2>Modulo di contatto</h2>
     <form action="/submit-contact" method="post">
@@ -35,7 +37,11 @@
         <label for="message">Messaggio:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
         
-        <input type="submit" value="Invia">
+        <button>Invia</button>
     </form>
+
+    <footer>
+        <p>&copy; 2024 LuxStay Resorts</p>
+    </footer>
 </body>
 </html>
