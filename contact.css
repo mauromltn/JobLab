@@ -1,0 +1,15 @@
+nav {
+    background-color: gray;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline;
+}
+
+nav a {
+    padding: 10px
+}
+
+a {
+    text-decoration: none;
+}

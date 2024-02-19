@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contatti</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>LuxStay Resorts</h1>
+        <nav style="text-align: center; margin: 15px 10px 10px 10px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resorts.html">Resorts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contatti</h1>
+    
+    <h2>Informazioni di contatto</h2>
+    <p>Indirizzo: Via Example, 12345 Città, Stato</p>
+    <p>Telefono: 123-456-7890</p>
+    <p>Email: info@example.com</p>
+    
+    <h2>Modulo di contatto</h2>
+    <form action="/submit-contact" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Messaggio:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
