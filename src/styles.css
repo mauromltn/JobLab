@@ -1,0 +1,23 @@
+ul {
+    background-color: darkgrey;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    margin: 15px 10px 10px 10px;
+    color: #000000;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Helvetica";
+    
+}
