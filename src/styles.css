@@ -1,12 +1,20 @@
-ul {
+header {
+    background-color: #474647;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+nav {
     background-color: darkgrey;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
-}
-
-li {
     display: inline;
 }
 
