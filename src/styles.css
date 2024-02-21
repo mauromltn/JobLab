@@ -5,6 +5,8 @@ body {
     font-family: Helvetica;
 }
 
+/* HEADER */
+
 nav {
     display: flex;
     background-color: #f2f2f2;
@@ -12,46 +14,67 @@ nav {
     align-items: center;
     padding: 10px;
 }
-nav h1 {
-    justify-content: flex-start;
-    font-weight: 100;
-    font-size: 30px;
-}
-
-nav ul {
-    justify-content: flex-end;
-    list-style: none;
-    display: flex;
-}
 
 nav a {
     text-decoration: none;
     color: #666666;
-    font-weight: 100;
-    margin-right: 15px;
-    transition: color 0.4s ease; /* Aggiunge una transizione per una transizione più fluida del colore */
 }
 
-nav a:hover {
-    color: #ffffff; /* Cambia il colore al passaggio del mouse */
+nav a h1 {
+    background-image: url(../icons/sylvanicon.ico);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    text-indent: 35px;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    
+}
+
+nav ul li a {
+    margin-right: 25px;
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* MAIN */
 
 main {
     padding: 20px;
 }
 
-main h1 {
+main h1, main h3 {
     text-align: center;
 }
 
-section {
-    display: flex;
+/*FIELDSET*/
+
+fieldset {
+    justify-content: center;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    margin: 0 80px;
+}
+
+fieldset legend {
+    text-align: center;
+    padding: 0 10px;
+    color: #666666;
+}
+
+fieldset section {
     justify-content: center;
     padding: 20px;
 }
 
 .resorts {
-    display: inline;
     background-color: #000000;
     color: #ffffff;
     margin: 0px 20px;
@@ -59,11 +82,19 @@ section {
     border-radius: 20px;
     text-align:center;
 }
+
+.resorts a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .resorts img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px;
 }
+
+/*FOOTER*/
 
 footer {
     margin: 0;
