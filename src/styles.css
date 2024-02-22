@@ -64,9 +64,18 @@ section {
 .resort {
     margin: 10px;
     border-radius: 25px;
-    background-color: #f2f2f2;
-    box-shadow: #666666 0 0 10px;
+    border: solid 2px #222222;    
     text-align: center;
+    transition: color 0.4s ease;
+}
+
+.resort:hover {
+    color: #ffffff;
+    background-color: #222222;
+    box-shadow: #000000 0 0 15px;
+    a {
+        color: #ffffff;
+    }
 }
 
 .resort a {
@@ -106,14 +115,15 @@ figcaption a {
     margin-top: 50px;
     padding: 10px 20px;
     border-radius: 10px;
-    border: solid 2px #909090;
-    background-color: #909090;
+    border: solid 2px #222222;
+    background-color: #ffffff;
+    transition: color 0.4s ease;
     font-weight: bold;
 }
 
 .resort button:hover {
-    border-radius: solid 2px #909090;
-    background-color: #909090;
+    border: solid 2px #ffffff;
+    background-color: #222222;
     color: #ffffff;
     font-weight: bold;
 }
