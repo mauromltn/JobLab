@@ -136,6 +136,24 @@ figcaption a {
     font-weight: bold;
 }
 
+/*FIELDSET*/
+
+fieldset {
+    border: solid 2px #222222;
+    border-radius: 25px;
+    padding: 0 20px;
+    margin: 20px 120px;
+}
+
+legend {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+fieldset p {
+    padding-bottom: 20px;
+}
+
 /*FOOTER*/
 
 footer {
