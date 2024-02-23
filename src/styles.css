@@ -54,9 +54,9 @@ main h1, main h3 {
     text-align: center;
 }
 
-/* SECTION */
+/* RESORT SECTION */
 
-section {
+#resort-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;    
@@ -112,7 +112,7 @@ figcaption a {
     padding: 0 25px;
 }
 
-/*BUTTON*/
+/* BUTTON */
 
 .resort.all p {
     padding: 0 40px;
@@ -136,25 +136,90 @@ figcaption a {
     font-weight: bold;
 }
 
-/*FIELDSET*/
+/* FIELDSET */
 
 fieldset {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     border: solid 2px #222222;
     border-radius: 25px;
-    padding: 0 20px;
-    margin: 20px 120px;
+    margin: 20px 70px;
 }
 
 legend {
-    margin: 0 20px;
-    font-size: 20px;
+    margin-left: 40px;
+    font-size: 20px;}
+
+.finestra {
+    width: 330px;
+    height: 380px;
+    margin: 20px 30px;
+    border-radius: 25px;
+    border: solid 2px #222222;    
+    text-align: center;
+    transition: 0.5s;
 }
 
-fieldset p {
-    padding-bottom: 20px;
+.finestra p {
+    padding: 0 30px;
 }
 
-/*FOOTER*/
+/* FORM */
+
+#recensione-section {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 70px 20px 70px;
+}
+
+#recensione-section h1 {
+    font-size: 30px;
+}
+
+#recensione {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 150px;
+}
+
+#recensione label {
+    display: block;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+#recensione input {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #222222;
+}
+
+#recensione textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #222222;
+
+}
+
+#recensione button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 2px #222222;
+    background-color: #ffffff;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+#recensione button:hover {
+    border: solid 2px #ffffff;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* FOOTER */
 
 footer {
     margin: 0;

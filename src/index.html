@@ -23,7 +23,7 @@
         <h1>Benvenuti alla nostra catena di hotel</h1>
         
         <h3>I migliori posti di Italia per le tue vacanze</h3>
-        <section>
+        <section id="resort-section">
             <div class="resort">
                 <a href="../pages/resort.html"><h2>Il Sereno Lago di Como</h2></a>
                 <figure>
@@ -64,7 +64,7 @@
                 </figure>
             </div>
             <div class="resort all">
-                <a href="../pages/resort.html"><h2>Altri Hotel</h2></a>
+                <h2>Altri Hotel</h2></a>
                 <h3>Non perdetevi gli altri hotel!</h3>
                 <p>
                     Esplorate altre opzioni di soggiorno di lusso e comfort tra gli altri hotel disponibili. 
@@ -73,19 +73,50 @@
                     di trovare il vostro rifugio ideale. Scoprite nuovi luoghi da chiamare casa e create ricordi 
                     indimenticabili durante il vostro soggiorno.
                 </p>
-                <button>Esplora Altri Hotel</button>
+                <a href="../pages/resort.html"><button>Esplora Altri Hotel</button></a>
             </div>
         </section>
 
         <fieldset>
-            <legend><h2>Perché scegliere Sylvan Resorts?</h2></legend>
-            <p>Sylvan Resorts è una catena di hotel di lusso che offre un'esperienza di soggiorno unica. 
-                I nostri hotel sono situati in alcune delle destinazioni più belle d'Italia, offrendo 
-                un'esperienza di soggiorno indimenticabile. Ogni hotel è stato progettato per offrire 
-                un'esperienza di soggiorno di lusso, con servizi e comfort di alta qualità. 
-                Con una vasta gamma di servizi e strutture, Sylvan Resorts è la scelta perfetta per 
-                chi cerca un'esperienza di soggiorno di lusso in Italia.</p>
+            <legend><h2>Altri link</h2></legend>
+            <div class="finestra">
+                <h2>Perché Sylvan Resorts?</h2>
+                <p>Sylvan Resorts è una catena di hotel di lusso che offre un'esperienza di soggiorno unica. 
+                    I nostri hotel sono situati in alcune delle destinazioni più belle d'Italia, offrendo 
+                    un'esperienza di soggiorno indimenticabile. Ogni hotel è stato progettato per offrire 
+                    un'esperienza di soggiorno di lusso, con servizi e comfort di alta qualità. 
+                    Con una vasta gamma di servizi e strutture, Sylvan Resorts è la scelta perfetta per 
+                    chi cerca un'esperienza di soggiorno di lusso in Italia.</p>
+            </div>
+            <div class="finestra">
+                <h2>Esplora le Destinazioni</h2>
+                <p>Esplora le destinazioni di Sylvan Resorts e scopri le meraviglie dell'Italia. 
+                    Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni 
+                    per un soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, 
+                    ogni destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da 
+                    chiamare casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
+            </div>
+            <div class="finestra">
+                <h2>Contattaci</h2>
+                <p>Per ulteriori informazioni sui nostri hotel e servizi, non esitare a contattarci. 
+                    Il nostro team sarà lieto di assisterti e rispondere a tutte le tue domande. 
+                    Siamo disponibili 24 ore su 24, 7 giorni su 7, per fornire assistenza e supporto. 
+                    Contattaci per prenotare il tuo soggiorno o per ulteriori informazioni sui nostri hotel e servizi.</p>
+            </div>
         </fieldset>
+
+        <section id="recensione-section">
+            <h1>Lascia una Recensione</h1>
+            <form id="recensione">
+                <label for="nomeUtente">Nome Utente:</label>
+                <input type="text" id="nomeUtente" name="nomeUtente" required>
+                
+                <label for="recUtente">Recensione:</label>
+                <textarea id="recUtente" name="recUtente" rows="4" required></textarea>
+                
+                <button>Invia Recensione</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Sylvan Resorts</p>
