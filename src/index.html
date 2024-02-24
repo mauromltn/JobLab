@@ -110,7 +110,15 @@
         </fieldset>
 
         <section id="mappa-section">
-            <h1>I nostri Resort</h1>
+            <div id="mappa-info">
+                <h1>I nostri Resort</h1>
+                <p>Scopri le nostre destinazioni e prenota il tuo soggiorno in uno dei nostri hotel di lusso. 
+                Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni per un 
+                soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, ogni 
+                destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da chiamare 
+                casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
+            </div>
+
             <div id="map"></div>
             <script>
                 var map = L.map('map').setView([41.8719, 12.5674], 6);
@@ -121,15 +129,15 @@
                 var hotelMarker = L.marker([41.9028, 12.4964]).addTo(map);
                 hotelMarker.bindPopup("<b>Hotel Roma</b><br>Posizione: Roma, Italia.").openPopup();
             </script>          
-            <!--<div id="mappa-info">
-                <h2>Esplora le nostre destinazioni</h2>
-                <p>Scopri le nostre destinazioni e prenota il tuo soggiorno in uno dei nostri hotel di lusso. 
-                Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni per un 
-                soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, ogni 
-                destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da chiamare 
-                casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
-            </div>-->
-        </section>    
+        </section>
+
+        <section id="backtop-section">
+            <button id="backtop">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+                </svg>
+            </button>      
+        </section>
     </main>
     
     <footer>

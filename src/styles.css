@@ -165,60 +165,6 @@ legend {
     padding: 0 30px;
 }
 
-/* FORM */
-
-#recensione-section {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px 70px 20px 70px;
-}
-
-#recensione-section h1 {
-    font-size: 30px;
-}
-
-#recensione {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 150px;
-}
-
-#recensione label {
-    display: block;
-    margin: 20px 0 10px 0;
-    font-weight: bold;
-}
-
-#recensione input {
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 2px #222222;
-}
-
-#recensione textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 2px #222222;
-
-}
-
-#recensione button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: solid 2px #222222;
-    background-color: #ffffff;
-    font-weight: bold;
-    transition: color 0.4s ease;
-}
-
-#recensione button:hover {
-    border: solid 2px #ffffff;
-    background-color: #222222;
-    color: #ffffff;
-    font-weight: bold;
-}
-
 /* MAPPA */
 
 #mappa-section {
@@ -235,6 +181,70 @@ legend {
     background-repeat: no-repeat;
 }
 
+/* BACKTOTOP */
+
+#backtop-section {
+    display: flex;
+    justify-content: center;
+}
+
+#backtop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  #backtop:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+  #backtop:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  #backtop::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  #backtop:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
 /* FOOTER */
 
 footer {
