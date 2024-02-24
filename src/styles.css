@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -179,6 +183,7 @@ legend {
     border-radius: 10px;
     background-color: #ffffff;
     background-repeat: no-repeat;
+    pointer-events: none; /* Disable mouse events on the map */
 }
 
 /* BACKTOTOP */
@@ -200,50 +205,47 @@ legend {
     justify-content: center;
     box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
     cursor: pointer;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     overflow: hidden;
     position: relative;
 }
-  
-  .svgIcon {
+
+.svgIcon {
     width: 12px;
-    transition-duration: 0.3s;
-  }
+    transition-duration: 0.4s;
+}
   
-  .svgIcon path {
+.svgIcon path {
     fill: white;
-  }
+}
   
-  #backtop:hover {
-    width: 140px;
+#backtop:hover {
+    width: 200px;
     border-radius: 50px;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     background-color: rgb(181, 160, 255);
     align-items: center;
-  }
+}
   
-  #backtop:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
+#backtop:hover .svgIcon {
+    transition-duration: 0.4s;
     transform: translateY(-200%);
-  }
+}
   
-  #backtop::before {
+#backtop::before {
     position: absolute;
     bottom: -20px;
     content: "Back to Top";
     color: white;
-    /* transition-duration: .3s; */
     font-size: 0px;
-  }
+}
   
-  #backtop:hover::before {
-    font-size: 13px;
+#backtop:hover::before {
+    font-size: 15px;
     opacity: 1;
     bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
+    transition-duration: 0.4s;
+}
   
 /* FOOTER */
 
