@@ -6,6 +6,10 @@
     <title>Sylvan Resorts | Sito web ufficiale</title>
     <link rel="icon" href="../icons/sylvanicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Link per visualizzare la mappa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +17,7 @@
             <a href="../src/index.html"><h1>Sylvan Resorts</h1></a>
             <ul>
                 <li><a href="../src/index.html">Home</a></li>
-                <li><a href="../pages/resort.html">Destinazioni</a></li>
+                <li><a href="../pages/resort.html">Resort</a></li>
                 <li><a href="../pages/about.html">About</a></li>
                 <li><a href="../pages/contact.html">Contatti</a></li>
             </ul>
@@ -89,7 +93,7 @@
                     chi cerca un'esperienza di soggiorno di lusso in Italia.</p>
             </div>
             <div class="finestra">
-                <h2>Esplora le Destinazioni</h2>
+                <h2>Che vista!</h2>
                 <p>Esplora le destinazioni di Sylvan Resorts e scopri le meraviglie dell'Italia. 
                     Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni 
                     per un soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, 
@@ -105,21 +109,32 @@
             </div>
         </fieldset>
 
-        <section id="recensione-section">
-            <h1>Lascia una Recensione</h1>
-            <form id="recensione">
-                <label for="nomeUtente">Nome Utente:</label>
-                <input type="text" id="nomeUtente" name="nomeUtente" required>
-                
-                <label for="recUtente">Recensione:</label>
-                <textarea id="recUtente" name="recUtente" rows="4" required></textarea>
-                
-                <button>Invia Recensione</button>
-            </form>
-        </section>
+        <section id="mappa-section">
+            <h1>I nostri Resort</h1>
+            <div id="map"></div>
+            <script>
+                var map = L.map('map').setView([41.8719, 12.5674], 6);
+            
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            
+                // Aggiungi un marcatore per l'hotel a Roma
+                var hotelMarker = L.marker([41.9028, 12.4964]).addTo(map);
+                hotelMarker.bindPopup("<b>Hotel Roma</b><br>Posizione: Roma, Italia.").openPopup();
+            </script>          
+            <!--<div id="mappa-info">
+                <h2>Esplora le nostre destinazioni</h2>
+                <p>Scopri le nostre destinazioni e prenota il tuo soggiorno in uno dei nostri hotel di lusso. 
+                Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni per un 
+                soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, ogni 
+                destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da chiamare 
+                casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
+            </div>-->
+        </section>    
     </main>
+    
     <footer>
-        <p>&copy; 2024 Sylvan Resorts</p>
+        <h1>Sylvan Resorts</h1>
+        <p>Copyright &copy; 2024 Sylvan Resorts | Tutti i diritti riservati.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
