@@ -183,7 +183,7 @@ legend {
     border-radius: 10px;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    pointer-events: none; /* Disable mouse events on the map */
+    pointer-events: none;
 }
 
 /* BACKTOTOP */
