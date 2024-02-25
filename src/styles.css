@@ -149,7 +149,7 @@ figcaption a {
 .resort button:hover {
     border: solid 2px #1b263b;
     background-color: #ffffff;
-    color: #222222;
+    color: #1b263b;
     font-weight: bold;
 }
 
@@ -167,7 +167,8 @@ fieldset {
 
 legend {
     margin-left: 40px;
-    font-size: 20px;}
+    font-size: 20px;
+}
 
 .finestra {
     width: 330px;
@@ -175,12 +176,9 @@ legend {
     margin: 20px 30px;
     border-radius: 25px;
     color: #1b263b;
-    background-color: #ffffff;    
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
     text-align: center;
-    transition: 0.5s;
-
 }
 
 .finestra p {
@@ -192,6 +190,7 @@ legend {
 #mappa-section {
     text-align: center;
     font-size: 20px;
+    color: #1b263b;
     margin: 50px 70px 20px 70px;
 }
 

@@ -6,6 +6,7 @@
     <title>Contatti</title>
     <link rel="icon" href="../icons/sylvanicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
 </head>
 <body>
     <header>
@@ -21,11 +22,37 @@
     </header>
 
     <main>
-        <h1>Possiamo aiutarti a gestire la tua prenotazione</h1>
-        <h2>Informazioni di contatto</h2>
-        <p>Chiamaci al: +39 02 1234 5678 o clicca l'indirizzo per inviarci una email:<a style="color: #000000; text-decoration: underline;" href="mailto:info@sylvanresorts.com">info@sylvanresorts.com</a></p>
-        <h2>Vuoi contattarci direttamente di persona?</h2>
-        <p>Indirizzo: Via del Sole, 456, 20100 Milano, Italia</p>
+        <h1 style="text-align: center;">Possiamo aiutarti a gestire la tua prenotazione</h1>
+        <section id="finestre">
+            <div class="info">
+                <h2>Informazioni di contatto</h2>
+                <ul>
+                    <li>Chiamaci al: +39 02 1234 5678</li>
+                    <li>Inviaci una email all'Indirizzo: <a style="color: #000000; text-decoration: underline;" href="mailto:info@sylvanresorts.com">info@sylvanresorts.com</a></li>
+                </ul>    
+            </div>
+            <div class="info">
+                <h2>Vuoi contattarci direttamente di persona?</h2>
+                <ul>
+                    <li>Indirizzo: Via del Sole, 456, 20100 Milano, Italia</li>    
+                </ul>
+            </div>
+            <div id="modulo">
+                <h2>Modulo di contatto</h2>
+                <form action="/submit-contact" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required><br>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+    
+                    <label for="message">Messaggio:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    
+                    <button>Invia</button>
+                </form>    
+            </div>
+        </section>
     </main>
     
     <footer>
