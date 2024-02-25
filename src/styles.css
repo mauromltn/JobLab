@@ -11,9 +11,13 @@ body {
 
 /* HEADER */
 
+header {
+    background-color: #e0e1dd;
+    border-radius: 0 0 10px 10px;
+}
+
 nav {
     display: flex;
-    background-color: #f2f2f2;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -21,22 +25,25 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #666666;
-}
-
-nav a h1 {
-    background-image: url(../icons/sylvanicon.ico);
-    background-size: 28px;
-    background-repeat: no-repeat;
-    justify-content: flex-start;
-    text-indent: 35px;
+    color: #222222;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;   
+}
+
+nav a h1 {
+    background-image: url(../icons/sylvanicon.ico);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 5px;
+    text-indent: 50px;
+    font-size: 30px;
 }
 
 nav ul li a {
@@ -45,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 /* MAIN */
@@ -56,6 +63,7 @@ main {
 
 main h1, main h3 {
     text-align: center;
+    color: #1b263b;
 }
 
 /* RESORT SECTION */
@@ -68,8 +76,11 @@ main h1, main h3 {
 
 .resort {
     margin: 20px 10px;
+    border: solid 2px #1b263b;
     border-radius: 25px;
-    border: solid 2px #222222;    
+    color: #f2f2f2;
+    background-color: #1b263b;
+    box-shadow: #1b263b 0 0 10px;
     text-align: center;
     width: 380px;
     height: 495px;
@@ -77,18 +88,17 @@ main h1, main h3 {
 }
 
 .resort:hover {
-    color: #ffffff;
-    background-color: #222222;
-    box-shadow: #000000 0 0 10px;
+    color: #1b263b;
+    background-color: #ffffff;
     transform: translateY(-20px);
     a {
-        color: #ffffff;
+        color: #1b263b;
     }
 }
 
 .resort a {
     text-decoration: none;
-    color: #000000;
+    color: #f2f2f2;
     text-align: center;
 }
 
@@ -116,8 +126,6 @@ figcaption a {
     padding: 0 25px;
 }
 
-/* BUTTON */
-
 .resort.all p {
     padding: 0 40px;
 }
@@ -125,18 +133,19 @@ figcaption a {
 .resort.all button {
     margin-top: 20px;
     padding: 20px 30px;
+    border: solid 2px #f2f2f2;
     border-radius: 10px;
-    border: solid 2px #222222;
-    background-color: #ffffff;
+    background-color: #1b263b;
+    color: #f2f2f2;
     transition: color 0.4s ease;
     font-weight: bold;
     font-size: 15px;
 }
 
 .resort button:hover {
-    border: solid 2px #ffffff;
-    background-color: #222222;
-    color: #ffffff;
+    border: solid 2px #1b263b;
+    background-color: #f2f2f2;
+    color: #222222;
     font-weight: bold;
 }
 
@@ -146,7 +155,7 @@ fieldset {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: solid 2px #222222;
+    border: solid 2px #1b263b;
     border-radius: 25px;
     margin: 20px 130px;
 }
@@ -160,9 +169,14 @@ legend {
     height: 380px;
     margin: 20px 30px;
     border-radius: 25px;
-    border: solid 2px #222222;    
+    color: #1b263b;
+    background-color: #ffffff;    
     text-align: center;
     transition: 0.5s;
+}
+
+.finestra:hover {
+    box-shadow: #1b263b 0 0 10px;
 }
 
 .finestra p {
@@ -197,13 +211,13 @@ legend {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(20, 20, 20);
+    background-color: #1b263b;
     border: none;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    box-shadow: 0 0 0 4px #778da9;
     cursor: pointer;
     transition-duration: 0.4s;
     overflow: hidden;
@@ -223,7 +237,7 @@ legend {
     width: 200px;
     border-radius: 50px;
     transition-duration: 0.4s;
-    background-color: rgb(181, 160, 255);
+    background-color: #415a77;
     align-items: center;
 }
   
@@ -235,13 +249,13 @@ legend {
 #backtop::before {
     position: absolute;
     bottom: -20px;
-    content: "Back to Top";
+    content: "Torna su";
     color: white;
     font-size: 0px;
 }
   
 #backtop:hover::before {
-    font-size: 15px;
+    font-size: 16px;
     opacity: 1;
     bottom: unset;
     transition-duration: 0.4s;
@@ -252,8 +266,8 @@ legend {
 footer {
     margin: 0;
     padding: 20px;
-    background-color: #f2f2f2;
-    color: #666666;
+    background-color: #e0e1dd;
+    color: #222222;
     text-align: center;
 }
 
