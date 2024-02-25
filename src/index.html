@@ -17,16 +17,16 @@
             <a href="../src/index.html"><h1>Sylvan Resorts</h1></a>
             <ul>
                 <li><a href="../src/index.html">Home</a></li>
-                <li><a href="../pages/resort.html">Resort</a></li>
+                <li><a href="../pages/resort.html">Resorts</a></li>
                 <li><a href="../pages/about.html">About</a></li>
-                <li><a href="../pages/contact.html">Contatti</a></li>
+                <li><a href="../pages/contact.html">Contattaci</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Benvenuti alla nostra catena di hotel</h1>
+        <h1 class="main-heading">Benvenuti alla nostra catena di hotel</h1>
+        <h3 class="main-heading">I migliori posti di Italia per le tue vacanze</h3>
         
-        <h3>I migliori posti di Italia per le tue vacanze</h3>
         <section id="resort-section">
             <div class="resort">
                 <a href="../pages/resort.html"><h2>Il Sereno Lago di Como</h2></a>
@@ -80,32 +80,35 @@
                 <a href="../pages/resort.html"><button>Esplora Altri Hotel</button></a>
             </div>
         </section>
-
+        
         <fieldset>
-            <legend><h2>Altri link</h2></legend>
+            <legend><h2>Elementi Distintivi</h2></legend>
             <div class="finestra">
-                <h2>Perché Sylvan Resorts?</h2>
-                <p>Sylvan Resorts è una catena di hotel di lusso che offre un'esperienza di soggiorno unica. 
-                    I nostri hotel sono situati in alcune delle destinazioni più belle d'Italia, offrendo 
-                    un'esperienza di soggiorno indimenticabile. Ogni hotel è stato progettato per offrire 
-                    un'esperienza di soggiorno di lusso, con servizi e comfort di alta qualità. 
-                    Con una vasta gamma di servizi e strutture, Sylvan Resorts è la scelta perfetta per 
-                    chi cerca un'esperienza di soggiorno di lusso in Italia.</p>
+                <h2>Esclusività</h2>
+                <p>In ogni dettaglio, in ogni servizio, si cela un'essenza di esclusività. Nei nostri hotel, gli ospiti 
+                    sono accolti in un mondo che è solo loro. Dal design raffinato delle camere agli extra personalizzati, 
+                    tutto è pensato per far sentire ogni ospite unico e speciale. L'esclusività è la nostra firma, 
+                    garantendo un'esperienza che va al di là delle aspettative, creando ricordi indelebili per chi varca 
+                    le porte dei nostri hotel.
+                </p>
             </div>
             <div class="finestra">
-                <h2>Che vista!</h2>
-                <p>Esplora le destinazioni di Sylvan Resorts e scopri le meraviglie dell'Italia. 
-                    Con una vasta gamma di destinazioni, Sylvan Resorts offre una varietà di opzioni 
-                    per un soggiorno indimenticabile. Dalle affascinanti location alle comodità esclusive, 
-                    ogni destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da 
-                    chiamare casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
+                <h2>Panoramico</h2>
+                <p>Dove il lusso si fonde con la visione, i nostri hotel offrono un'esperienza panoramica unica. 
+                    Ogni camera è una finestra su paesaggi mozzafiato, regalando agli ospiti una connessione diretta 
+                    con la bellezza della natura. Dai balconi privati alle terrazze panoramiche, invitiamo gli ospiti 
+                    a immergersi completamente nelle viste pittoresche che circondano i nostri hotel. Ogni momento 
+                    è un affaccio su un mondo di serenità e meraviglia.
+                </p>
             </div>
             <div class="finestra">
-                <h2>Contattaci</h2>
-                <p>Per ulteriori informazioni sui nostri hotel e servizi, non esitare a contattarci. 
-                    Il nostro team sarà lieto di assisterti e rispondere a tutte le tue domande. 
-                    Siamo disponibili 24 ore su 24, 7 giorni su 7, per fornire assistenza e supporto. 
-                    Contattaci per prenotare il tuo soggiorno o per ulteriori informazioni sui nostri hotel e servizi.</p>
+                <h2>Sostenibilità</h2>
+                <p>Ci impegniamo a oltrepassare i confini dell'ospitalità di lusso, abbracciando la sostenibilità come 
+                    principio fondamentale. Con pratiche ecologiche e un impegno per la responsabilità ambientale, 
+                    i nostri hotel sono progettati per avere un impatto positivo sul pianeta. Dall'uso di energie rinnovabili 
+                    alla riduzione dei rifiuti, vogliamo offrire ai nostri ospiti un'esperienza di lusso che rispetti e 
+                    protegga il mondo che ci circonda.
+                </p>
             </div>
         </fieldset>
 
@@ -118,7 +121,6 @@
                 destinazione è pensata per offrire un'esperienza unica. Scopri nuovi luoghi da chiamare 
                 casa e crea ricordi indimenticabili durante il tuo soggiorno.</p>
             </div>
-
             <div id="map"></div>
             <script>
                 var map = L.map('map').setView([41.8719, 12.5674], 6);
@@ -135,7 +137,9 @@
             <a href="#home">
                 <button id="backtop">
                     <svg class="svgIcon" viewBox="0 0 384 512">
-                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 
+                        0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 
+                        246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
                     </svg>
                 </button>
             </a>

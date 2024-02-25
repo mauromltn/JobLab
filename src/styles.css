@@ -61,7 +61,7 @@ main {
     padding: 20px;
 }
 
-main h1, main h3 {
+.main-heading {
     text-align: center;
     color: #1b263b;
 }
@@ -100,6 +100,10 @@ main h1, main h3 {
     text-decoration: none;
     color: #f2f2f2;
     text-align: center;
+}
+
+.resort a:hover {
+    text-decoration: underline 2px #1b263b;
 }
 
 figure img {
@@ -157,6 +161,7 @@ fieldset {
     flex-wrap: wrap;
     border: solid 2px #1b263b;
     border-radius: 25px;
+    padding-bottom: 30px;
     margin: 20px 130px;
 }
 
@@ -171,12 +176,11 @@ legend {
     border-radius: 25px;
     color: #1b263b;
     background-color: #ffffff;    
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
     text-align: center;
     transition: 0.5s;
-}
 
-.finestra:hover {
-    box-shadow: #1b263b 0 0 10px;
 }
 
 .finestra p {
