@@ -1,18 +1,37 @@
-/* BUTTONS */
-
-.resort button {
-    margin-top: 25px;
-    padding: 20px 30px;
-    border: solid 2px #ffffff;
-    border-radius: 10px;
-    background-color: #1b263b;
-    color: #f2f2f2;
-    font-weight: bold;
-    transition: color 0.4s ease;
+#inner_container_list_item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
 }
 
-.resort button:hover {
+.box-preview {
+    margin: 20px 10px;
     border: solid 2px #1b263b;
-    background-color: #ffffff;
+    border-radius: 25px;
+    color: #f2f2f2;
+    background-color: #1b263b;
+    box-shadow: #1b263b 0 0 10px;
+    text-align: center;
+    width: 380px;
+    height: 495px;
+    transition: 0.5s;
+}
+
+.box-preview:hover {
     color: #1b263b;
+    background-color: #ffffff;
+    transform: translateY(-20px);
+    a {
+        color: #1b263b;
+    }
+}
+
+.box-preview a {
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.box-preview a:hover {
+    text-decoration: underline 2px #1b263b;
 }
