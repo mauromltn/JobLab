@@ -10,7 +10,6 @@ body {
 }
 
 /* HEADER */
-
 header {
     background-color: #e0e1dd;
     border-radius: 0 0 10px 10px;
@@ -56,7 +55,6 @@ nav ul li a:hover {
 }
 
 /* MAIN */
-
 main {
     padding: 20px;
 }
@@ -67,7 +65,6 @@ main {
 }
 
 /* RESORT SECTION */
-
 #resort-section {
     display: flex;
     justify-content: center;
@@ -88,6 +85,7 @@ main {
 }
 
 .resort:hover {
+    border: solid 2px #ffffff;
     color: #1b263b;
     background-color: #ffffff;
     transform: translateY(-20px);
@@ -154,7 +152,6 @@ figcaption a {
 }
 
 /* FIELDSET */
-
 fieldset {
     display: flex;
     justify-content: center;
@@ -186,7 +183,6 @@ legend {
 }
 
 /* MAPPA */
-
 #mappa-section {
     text-align: center;
     font-size: 20px;
@@ -204,7 +200,6 @@ legend {
 }
 
 /* BACKTOTOP */
-
 #backtop-section {
     display: flex;
     justify-content: center;
@@ -265,7 +260,6 @@ legend {
 }
   
 /* FOOTER */
-
 footer {
     margin: 0;
     padding: 20px;
