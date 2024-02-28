@@ -37,7 +37,8 @@ function getHotels() {
         var i;
         document.getElementById("inner_container_list_item").innerHTML = "";
         for (i = 0; i < arr.length; i++) {
-            /** Box Preview **/
+
+            /* Box Preview */
             var box_preview = document.createElement("div");
             box_preview.className = "box-preview";
 
@@ -47,7 +48,7 @@ function getHotels() {
             var box_preview_header_text = document.createTextNode(arr[i].name);
             box_preview_header.appendChild(box_preview_header_text);
 
-            /** Box Body **/
+            /* Box Body */
             var box_preview_body = document.createElement("div");
             box_preview_body.className = "box-preview-body";
             var box_preview_body_text = document.createElement("div");
@@ -69,10 +70,10 @@ function getHotels() {
             box_preview_body_text.appendChild(document.createTextNode("Rooms: " + arr[i].rooms));
             box_preview_body.appendChild(box_preview_body_text);
 
-            /** Box Footer **/
+            /* Box Footer */
             var box_preview_footer = document.createElement("div");
             box_preview_footer.className = "box-preview-footer";
-            box_preview_footer.innerHTML = '<a href="#" class="button button1" onclick="viewHotel(\'' + arr[i].id + '\')"><button>View More</button></a>';
+            box_preview_footer.innerHTML = '<a href="#" class="hotel-button" onclick="viewHotel(\'' + arr[i].id + '\')"><button>View More</button></a>';
 
             box_preview.appendChild(box_preview_header);
             box_preview.appendChild(box_preview_body);
@@ -84,9 +85,8 @@ function getHotels() {
 }
 getHotels();
 
-function viewHotel(id){
+function viewHotel(id) {
     var i;
-    var j;
     var hotel;
     var dettaglio_header = "";
     var dettaglio_body = "";
@@ -96,19 +96,17 @@ function viewHotel(id){
     document.getElementById("inner_container_list").style.display = "none";
     document.getElementById("inner_container_detail").style.display = "block"; 
 
-    for(i = 0; i < hotels.length; i++)
-        if(hotels[i].id == id) hotel = hotels[i];
-        dettaglio_header += '<div>' + hotel.name + ' ';
-    for(k = 0; k < hotel.stars; k++){
-        dettaglio_header += '<img src="image/stars/star.png" class="star" >';
+    for (i = 0; i < hotels.length; i++) {
+        if (hotels[i].id == id) {
+            hotel = hotels[i];
+            dettaglio_header += '<div>' + hotel.name + ' ';
+        }
     }
 
     dettaglio_header += '</div>';
-
-    dettaglio_body +='<div>' + hotel.longDescription + '</div>';
+    dettaglio_body += '<div>' + hotel.longDescription + '</div>';
     dettaglio_body += '<div class="box_container">';
 
-    dettaglio_body += getHtmlHotelDetailBox('Number of rooms', '', hotel.rooms, 'sfondo');
     dettaglio_body += getHtmlHotelDetailBox('Number of rooms', '', hotel.rooms, 'sfondo');
     dettaglio_body += getHtmlHotelDetailBox('Phone', '', hotel.phone, 'sfondo');
     dettaglio_body += getHtmlHotelDetailBox('Email', '', hotel.email, 'sfondo');
@@ -128,13 +126,14 @@ function viewHotel(id){
 
 }
 
-function getHtmlHotelDetailBox(title, img, info, color){
-    str_code = "";
-    str_code += '<div class="items_detail_box '+color+'">';
-    str_code += '<p>'+title+'<br><img src="'+img+'" class="immagine" alt=""/><br>';
-    str_code += '<strong>'+info+'</strong></p>';
-    str_code += '</div>';
-    return str_code;
+function getHtmlHotelDetailBox(title, img, info, color) {
+    
+    detail_box = "";
+    detail_box += '<div class="items_detail_box '+color+'">';
+    detail_box += '<p>'+title+'<br><img src="'+img+'" class="immagine" alt=""/><br>';
+    detail_box += '<strong>'+info+'</strong></p>';
+    detail_box += '</div>';
+    return detail_box;
 }
 
 function goBack() {
