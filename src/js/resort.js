@@ -1,14 +1,16 @@
+var hotels = null;
+
 function getHotels() {
     var request = new XMLHttpRequest();
     var url = "http://localhost:8080/hotels";
 
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function() {  // verifica se la richiesta è stata completata
         console.log(this.readyState);
         if (this.readyState == 4 && this.status == 200) {
-            hotels = JSON.parse(this.responseText);
+            hotels = JSON.parse(this.responseText);  // converte il JSON del server e lo converte in JS
             printHotels(hotels);
 
-            /*LISTENER*/
+            /* RICERCA */
             var filtered = null;
             document.getElementById("input-search").addEventListener("keyup", event => {
                 var pattern = event.target.value;
@@ -30,7 +32,7 @@ function getHotels() {
     request.open('GET', url);
     request.send();
 
-
+    /* HOTEL */
     function printHotels(arr) {
         var i;
         document.getElementById("inner_container_list_item").innerHTML = "";
