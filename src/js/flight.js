@@ -80,3 +80,11 @@ function getFlights() {
     }
 }
 getFlights();
+
+function viewFlight(id) {
+    var i;
+    var flight;
+    var dettaglio_header = "";
+    var dettaglio_body = "";
+    var dettaglio_footer = "";
+}

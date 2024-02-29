@@ -42,7 +42,7 @@ function getHotels() {
             var box_preview = document.createElement("div");
             box_preview.className = "box-preview";
 
-            /** Box Header **/
+            /* Box Header */
             var box_preview_header = document.createElement("div");
             box_preview_header.className = "box-preview-header";
             var box_preview_header_text = document.createTextNode(arr[i].name);
@@ -73,7 +73,7 @@ function getHotels() {
             /* Box Footer */
             var box_preview_footer = document.createElement("div");
             box_preview_footer.className = "box-preview-footer";
-            box_preview_footer.innerHTML = '<a href="#" class="hotel-button" onclick="viewHotel(\'' + arr[i].id + '\')"><button>View More</button></a>';
+            box_preview_footer.innerHTML = '<a href="#" class="hotel-button" onclick="viewHotels(\'' + arr[i].id + '\')"><button>View More</button></a>';
 
             box_preview.appendChild(box_preview_header);
             box_preview.appendChild(box_preview_body);
@@ -85,44 +85,47 @@ function getHotels() {
 }
 getHotels();
 
-function viewHotel(id) {
+function viewHotels(id) {
     var i;
     var hotel;
-    var dettaglio_header = "";
-    var dettaglio_body = "";
-    var dettaglio_footer = "";
 
-    
     document.getElementById("inner_container_list").style.display = "none";
+    document.getElementById("inner_container_list_item").style.display = "none";
     document.getElementById("inner_container_detail").style.display = "block"; 
 
     for (i = 0; i < hotels.length; i++) {
         if (hotels[i].id == id) {
             hotel = hotels[i];
-            dettaglio_header += '<div>' + hotel.name + ' ';
         }
     }
 
-    dettaglio_header += '</div>';
-    dettaglio_body += '<div>' + hotel.longDescription + '</div>';
-    dettaglio_body += '<div class="box_container">';
+    /* Box Header */
+    var dettaglio_header = document.createElement("div");
+    dettaglio_header.className = "dettaglio-header"; 
+    dettaglio_header.appendChild(document.createTextNode(hotel.name + hotel.stars));
 
-    dettaglio_body += getHtmlHotelDetailBox('Number of rooms', '', hotel.rooms, 'sfondo');
-    dettaglio_body += getHtmlHotelDetailBox('Phone', '', hotel.phone, 'sfondo');
-    dettaglio_body += getHtmlHotelDetailBox('Email', '', hotel.email, 'sfondo');
-    dettaglio_body += getHtmlHotelDetailBox('Website', '', hotel.website, 'sfondo');
+    /* Box Body */
+    var dettaglio_body = document.createElement("div");
+    dettaglio_body.className = "dettaglio-body";
+    dettaglio_body.appendChild(document.createTextNode(hotel.longDescription));
+    dettaglio_body.appendChild(document.createElement("br"));
+    dettaglio_body.appendChild(document.createElement("br"));
+    dettaglio_body.appendChild(document.createTextNode("Number of rooms: " + hotel.rooms));
+    dettaglio_body.appendChild(document.createElement("br"));
+    dettaglio_body.appendChild(document.createTextNode("Phone: " + hotel.phone));
+    dettaglio_body.appendChild(document.createElement("br"));
+    dettaglio_body.appendChild(document.createTextNode("Email: " + hotel.email));
+    dettaglio_body.appendChild(document.createElement("br"));
+    dettaglio_body.appendChild(document.createTextNode("Website: " + hotel.website));
 
-    dettaglio_body += '</div>';
-
+    /* Box Footer */
+    var dettaglio_footer = document.createElement("div");
+    dettaglio_footer.className = "dettaglio-footer";
+    dettaglio_footer.appendChild(document.createTextNode("Address:"  + hotel.address.streetAddress + ", " + hotel.address.city + ", " + hotel.address.country + ", " + hotel.address.zipCode));
     
-    dettaglio_footer += '<div>' 
-    dettaglio_footer += '<address>Address:'+hotel.address.streetAddress+', '+hotel.address.city+', '+hotel.address.country+' - '+hotel.address.zipCode+'</address>';
-    dettaglio_footer += '</div>';
-
-    
-    document.getElementById("box_detail_header").innerHTML = dettaglio_header;
-    document.getElementById("box_detail_body").innerHTML = dettaglio_body;
-    document.getElementById("box_detail_footer").innerHTML = dettaglio_footer;
+    document.getElementById("box_preview_header").innerHTML = dettaglio_header;
+    document.getElementById("box_preview_body").innerHTML = dettaglio_body;
+    document.getElementById("box_preview_footer").innerHTML = dettaglio_footer;
 
 }
 
